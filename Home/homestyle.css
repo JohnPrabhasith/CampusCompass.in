@@ -12,17 +12,17 @@ body {
   overflow-x: hidden;
   background-color: #000;
 }
-.Home{
-    margin-top: 10%;
-    display: flex;
-    flex-direction: row;
-    width:100%;
+.Home {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-.righthome{
-    margin-left: 0%;
-    margin-top: 10%;
-    margin-right: 7%;
-    width: 50%;
+.righthome {
+  margin-left: 0%;
+  margin-top: 10%;
+  margin-right: 7%;
+  width: 50%;
 }
 #menu {
   overflow: hidden;
@@ -50,7 +50,9 @@ body {
   right: 0;
   bottom: 0;
   opacity: 0.32;
-  width: 100vw;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   /* height: 100vh; */
   z-index: -2;
 }
@@ -203,17 +205,17 @@ a:active {
   cursor: pointer;
 }
 
-.lefthome{
-    margin-left: 7%;
-    margin-top: 10%;
-    margin-right: 0%;
+.lefthome {
+  margin-left: 7%;
+  margin-top: 10%;
+  margin-right: 0%;
 }
 
-.info{
-    font-family: "DM Serif Display", serif;
-    width:50%;
-    font-size: 100%;
-    color:#ca9696
+.info {
+  font-family: "DM Serif Display", serif;
+  width: 50%;
+  font-size: 100%;
+  color: #ca9696;
 }
 /* button styling */
 .button {

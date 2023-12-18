@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Collegiate+One&family=Cinzel&family=DM+Serif+Display:ital@0;1&family=GFS+Didot&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalnia:wght@100;300;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;700&family=Kalnia:wght@300;400;500;600&family=Rowdies&family=Space+Grotesk:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -12,17 +12,17 @@ body {
   overflow-x: hidden;
   background-color: #000;
 }
-.Home{
-    margin-top: 10%;
-    display: flex;
-    flex-direction: row;
-    width:100%;
+.Home {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
-.righthome{
-    margin-left: 0%;
-    margin-top: 10%;
-    margin-right: 7%;
-    width: 50%;
+.righthome {
+  margin-left: 0%;
+  margin-top: 10%;
+  margin-right: 7%;
+  width: 50%;
 }
 #menu {
   overflow: hidden;
@@ -50,7 +50,9 @@ body {
   right: 0;
   bottom: 0;
   opacity: 0.32;
-  width: 100vw;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   /* height: 100vh; */
   z-index: -2;
 }
@@ -182,7 +184,6 @@ a:active {
   background: #555;
 }
 
-
 .scrollable-content {
   scrollbar-width: thin;
   scrollbar-color: #888 #f1f1f1;
@@ -191,4 +192,104 @@ a:active {
   .logo {
     width: 10%;
   }
+}
+.map {
+  margin-top: 8%;
+  margin-left: 15%;
+  margin-right: 10%;
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+table {
+  border-radius: 15px;
+  width: 70%;
+  margin: 50px auto;
+  margin-top: 10%;
+  background-color: rgba(168, 243, 236, 0.529);
+  border-collapse: inherit;
+}
+tr {
+  border: 1px solid transparent;
+  z-index: 7;
+  font-size: 1.45rem;
+  text-align: center;
+}
+td {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  padding: 5px;
+  font-size: 1.5rem;
+  transition: all 0.25s ease-in-out;
+}
+td.a a {
+  color: #c05610f5;
+  /* background-color: rgba(160, 170, 131, 0.488) */
+  /* shape-margin: ; */
+}
+td.highlight {
+  padding: 0;
+  width: 4px;
+}
+td.highlight div {
+  width: 4px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 0;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+tr:hover {
+  box-shadow: 0px 9px 4px -9px rgb(198, 198, 198);
+}
+tr:hover td {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  /* border-top: 3px solid rgb(153, 121, 121);
+  border-bottom: 3px solid rgb(187, 114, 114); */
+  font-size: 1.7rem;
+}
+th {
+  font-family: "Kalnia", serif;
+  text-align: center;
+  padding: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+/* tr:first-child:hover td {
+  border-top: none;
+}
+tr:last-child:hover td {
+  border-bottom: none;
+} */
+.header {
+  z-index: 2;
+}
+tr:hover td.highlight div {
+  transform: scaleX(3);
+}
+a:link,
+a:visited {
+  background-color: transparent;
+  color: black;
+  border: 2px solid transparent;
+  padding: 5px;
+  text-align: center;
+  text-decoration: double;  
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: transparent;
+  color: rgb(165, 97, 97);
+  font-size:125%;
 }
