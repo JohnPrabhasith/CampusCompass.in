@@ -1,0 +1,273 @@
+<html>
+  <head>
+    <title>Training and placement office</title>
+    <link rel="logo icon" href="Logo0071.png" type="image/icon type" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Collegiate+One&family=Cinzel&family=DM+Serif+Display:ital@0;1&family=GFS+Didot&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalnia:wght@100;300;500&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .name {
+        text-align: center;
+        font-size: 4.5rem;
+        font-family: "Abril Fatface", cursive;
+        color: rgb(255, 255, 255);
+        font-style: bold;
+        font-weight: 300;
+        margin: 2% 0;
+        margin-bottom: 0;
+      }
+
+      body {
+        width: 100vw;
+        background-size: cover;
+        margin-bottom: 0px;
+        overflow-x: hidden;
+        background-color: #000;
+      }
+      #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        width: 10%;
+      }
+      table {
+        border-radius: 15px;
+        width: 70%;
+        margin: 50px auto;
+        margin-top: 0px;
+        background-color: rgba(194, 207, 194, 0.488);
+        border-collapse: inherit;
+      }
+      tr {
+        border: 1px solid transparent;
+        z-index: 7;
+        font-size: 1.45rem;
+        text-align: center;
+      }
+      td {
+        font-family: "Hedvig Letters Serif", serif;
+        text-align: center;
+        padding: 5px;
+        font-size: 1.5rem;
+        transition: all 0.25s ease-in-out;
+      }
+      td.highlight {
+        padding: 0;
+        width: 4px;
+      }
+      td.highlight div {
+        width: 4px;
+        height: 50px;
+        border-radius: 50px;
+        padding:0;
+        background-color: white;
+        transition: all 0.2s ease-in-out;
+      }
+      tr:hover {
+        box-shadow: 0px 9px 4px -9px rgb(198, 198, 198);
+      }
+      tr:hover td {
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        /* border-top: 3px solid rgb(153, 121, 121);
+        border-bottom: 3px solid rgb(187, 114, 114); */
+        font-size: 1.7rem;
+      }
+      th {
+        font-family: "Kalnia", serif;
+        text-align: center;
+        padding: 15px;
+        font-size: 2rem;
+        transition: all 0.2s ease-in-out;
+      }
+      /* tr:first-child:hover td {
+        border-top: none;
+      }
+      tr:last-child:hover td {
+        border-bottom: none;
+      } */
+      .header {
+        z-index: 2;
+      }
+      tr:hover td.highlight div {
+        transform: scaleX(3);
+      }
+      #myVideo {
+        position: fixed;
+        background-repeat: repeat;
+        right: 0;
+        bottom: 0;
+        opacity: 0.32;
+        width: 100vw;
+        /* height: 100vh; */
+        z-index: -2;
+      }
+      .Heading {
+        margin: 0;
+        width: 30%;
+        z-index: -1;
+      }
+      .subheading {
+        font-size: 90%;
+        margin: 2px;
+        margin-top: 0;
+        padding-left: 12%;
+        font-weight: 300;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-family: "DM Serif Display", serif;
+      }
+      a:link,
+      a:visited {
+        background-color: transparent;
+        color: black;
+        border: 2px solid transparent;
+        padding: 5px;
+        text-align: center;
+        text-decoration: double;
+        display: inline-block;
+      }
+
+      a:hover,
+      a:active {
+        background-color: transparent;
+        color: white;
+      }
+      .btn {
+        width: 105px;
+        height: 50px;
+        font-size: 17px;
+        margin-right: 50px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border: none;
+        outline: none;
+        color: #000000;
+        background-color: rgba(0, 0, 0, 0.537);
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 70px;
+      }
+
+      .btn:before {
+        content: "";
+        background: linear-gradient(
+          45deg,
+          #ff0000,
+          #ff7300,
+          #fffb00,
+          #48ff00,
+          #00ffd5,
+          #002bff,
+          #7a00ff,
+          #ff00c8,
+          #ff0000
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 60px;
+      }
+
+      .btn:active {
+        color: #000;
+      }
+
+      .btn:active:after {
+        background: transparent;
+      }
+
+      .btn:hover:before {
+        opacity: 1;
+      }
+
+      .btn:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        background: rgba(255, 255, 255, 0.484);
+        left: 0;
+        top: 0;
+        border-radius: 70px;
+      }
+
+      @keyframes glowing {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 400% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <video autoplay muted loop id="myVideo">
+      <source src="001.mp4" type="video/mp4" />
+    </video>
+    <div id="menu">
+      <div id="menu-wrapper">
+        <image src="Logo0071.png" class="logo" />
+        <image src="peru1.png" class="Heading" />
+        <h3 class="subheading">Find your way around campus</h3>
+      </div>
+      <div class="navbar">
+        <button class="btn"><a href="#">Home</a></button>
+        <button class="btn"><a href="maps.html">Map</a></button>
+        <button class="btn"><a href="samp45.html">Faculty</a></button>
+        <button class="btn"><a href="management.html">Management</a></button>
+        <button class="btn"><a href="#">About Us</a></button>
+      </div>
+    </div>
+    <!-- <div id="header"><img src="cmrcet1.png" class="Cmrlogo" alt="CMRCET3" style="width: 50%" />
+    </div> -->
+    <div class="name">Training & Placement Office </div>
+    <table>
+      <tr>
+        <th>SL.NO</th>
+        <th>Incharge</th>
+        <th>Profession</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Dr P.Hima Bindu</td>
+        <td>Associate Dean - Training & Placement</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Ch. Raja Kishore</td>
+        <td>Assoc Prof, Training Officer , Associate Professor CSE Dept.</td>
+      </tr>
+    </table>
+  </body>
+</html>
