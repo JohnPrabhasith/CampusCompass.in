@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>ADMIN OFFICE</title>
+  <title>MANAGENT</title>
   <link rel="logo icon" href="Logo0071.png" type="image/icon type" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -300,49 +300,50 @@
         </div>
       </div>
       <main class="container">
-        <div class="name">ADMINISTARTIVE OFFICE</div>
+        <div class="name">MANAGEMENT OF CMRCET</div>
         <table class="table table-bordered table-striped">
           <thead class="table-dark">
       <!-- <div id="header">
         <img src="cmrcet1.png" class="Cmrlogo" alt="CMRCET3" style="width: 50%" />
       </div> -->
-    <table>
+    
+  <table>
       <tr>
-        <th>Sl.NO</th>
-        <th>SECTION</th>
-        <th>INCHARGE</th>
+        <th>SL.NO</th>
+        <th>MANAGEMENT</th>
+        <th>ROOM NO.</th>
       </tr>
       <tr>
-        <td>1</td>
-        <td>Accounts Officer</td>
-        <td>Mr.Sreenivas Velivala</td>
+        <td>1</td>`
+        <td><a href="AdminOff.html">Admin office</a></td>
+        <td>001</td>
       </tr>
       <tr>
         <td>2</td>
-        <td>Cashier</td>
-        <td>Alluri Laxmi Rani</td>
+        <td>Coordinator-IQAC</td>
+        <td>002</td>
       </tr>
       <tr>
-        <td>3</td>
-        <td>Accounts</td>
-        <td>Narsing Rao</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Scholarship</td>
-        <td>Sravan</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Documentation</td>
-        <td>Ch.Richeal</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Administrative Office</td>
-        <td>Ch.Srinivas Reddy</td>
-      </tr>
-      <tr></tr>
+          <td>3</td>
+          <td><a href="PPoffice.html">Principal's Office</td></a>
+          <td>003</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Board Room</td>
+          <td>004</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><a href="TrainingAP.html">Training And Placement Office</a></td>
+          <td>005</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><a href="scienceAT.html">Science Technology & Innovation (STI Hub)</a></td>
+          <td>007</td>
+        </tr>
+
     </table>
   </body>
-</html>
+  </html>

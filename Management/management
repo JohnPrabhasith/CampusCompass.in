@@ -1,17 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>ADMIN OFFICE</title>
-  <link rel="logo icon" href="Logo0071.png" type="image/icon type" />
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+<html>
+  <head>
+      <title>MANAGEMENT</title>
+      <link rel="logo icon" href="Logo0071.png" type="image/icon type" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+        crossorigin="anonymous"
+      />
       <style>
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;700&family=Kalnia:wght@300;400;500;600&family=Rowdies&family=Space+Grotesk:wght@700&display=swap');
- 
-       * {
+
+        @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Collegiate+One&family=Cinzel&family=DM+Serif+Display:ital@0;1&family=GFS+Didot&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalnia:ght@100;300;500&display=swap");
+        * {
           margin: 0;
           padding: 0;
           box-sizing: border-box;
@@ -19,14 +21,12 @@
         .name {
           text-align: center;
           font-size: 4.5rem;
-          font-family: 'Josefin Sans', sans-serif;
-          color: rgba(255, 255, 255,0.665);
+          font-family: "Abril Fatface", cursive;
+          color: rgb(255, 255, 255);
           font-style: bold;
           font-weight: 300;
-          margin: 20% 0;
-          margin-top:10%;
-          margin-bottom:2.5%;
-         text-shadow:0px 0px 10px rgba(255, 255, 255,0.665);
+          margin: 2% 0;
+          margin-bottom: 0;
         }
 
         body {
@@ -37,23 +37,11 @@
           background-color: #000;
         }
         #menu {
-          overflow: hidden;
-      position: fixed;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      top: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
         }
-      .navbar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-    }
-        
         .logo {
           width: 10%;
         }
@@ -62,8 +50,7 @@
           width: 70%;
           margin: 50px auto;
           margin-top: 0px;
-          background-color: rgba(98, 138, 134, 0.488);
-      
+          background-color: rgba(194, 207, 194, 0.466);
           border-collapse: inherit;
         }
         tr {
@@ -73,17 +60,12 @@
           text-align: center;
         }
         td {
-          font-family:  'Josefin Sans', sans-serif;
+          font-family: "Hedvig Letters Serif", serif;
           text-align: center;
           padding: 5px;
           font-size: 1.5rem;
           transition: all 0.25s ease-in-out;
         }
-        td.a a {
-      color: #c05610f5;
-      /* background-color: rgba(160, 170, 131, 0.488) */
-      /* shape-margin: ; */
-    }
         td.highlight {
           padding: 0;
           width: 4px;
@@ -110,7 +92,6 @@
           font-family: "Kalnia", serif;
           text-align: center;
           padding: 15px;
-          font-family:  'Josefin Sans', sans-serif;
           font-size: 2rem;
           transition: all 0.2s ease-in-out;
         }
@@ -126,24 +107,6 @@
         tr:hover td.highlight div {
           transform: scaleX(3);
         }
-        .button-91 {
-      color: #fff;
-      padding: 15px 25px;
-      background-color: #38D2D2;
-      background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
-      box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
-      border-radius: 14px;
-      font-weight: bold;
-      font-size: 16px;
-
-      border: 0;
-
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-
-      cursor: pointer;
-    }
         #myVideo {
           position: fixed;
           background-repeat: repeat;
@@ -184,24 +147,12 @@
         a:active {
           background-color: transparent;
           color: white;
-          font-size:125%;
         }
-        .button {
-      color: #7a00ff;
-      padding: 8px 22px;
-      border-radius: 6px;
-      background: #48ff00;
-      transition: all 0.3s ease;
-    }
-
-    button:active {
-      transform: scale(0.96);
-    }
         .btn {
-          width: 125px;
+          width: 105px;
           height: 50px;
-          font-size: 17px;
-          margin-right: 35px;
+          font-size: 15px;
+          margin-right: 50px;
           font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
             sans-serif;
           border: none;
@@ -283,12 +234,12 @@
     </head>
     <body>
       <video autoplay muted loop id="myVideo">
-        <source src="/001.mp4" type="video/mp4" />
+        <source src="001.mp4" type="video/mp4" />
       </video>
       <div id="menu">
         <div id="menu-wrapper">
-          <image src="/logo0071.png" class="logo" />
-          <image src="/peru1.png" class="Heading" />
+          <image src="Logo0071.png" class="logo" />
+          <image src="peru1.png" class="Heading" />
           <h3 class="subheading">Find your way around campus</h3>
         </div>
         <div class="navbar">
@@ -299,50 +250,47 @@
           <button class="btn"><a href="#">About Us</a></button>
         </div>
       </div>
-      <main class="container">
-        <div class="name">ADMINISTARTIVE OFFICE</div>
-        <table class="table table-bordered table-striped">
-          <thead class="table-dark">
       <!-- <div id="header">
         <img src="cmrcet1.png" class="Cmrlogo" alt="CMRCET3" style="width: 50%" />
       </div> -->
-    <table>
+      <div class="name">MANAGEMENT OF CMRCET</div>
+  <table>
       <tr>
-        <th>Sl.NO</th>
-        <th>SECTION</th>
-        <th>INCHARGE</th>
+        <th>SL.NO</th>
+        <th>MANAGEMENT</th>
+        <th>ROOM NO.</th>
       </tr>
       <tr>
-        <td>1</td>
-        <td>Accounts Officer</td>
-        <td>Mr.Sreenivas Velivala</td>
+        <td>1</td>`
+        <td><a href="AdminOff.html">Admin office</a></td>
+        <td>001</td>
       </tr>
       <tr>
         <td>2</td>
-        <td>Cashier</td>
-        <td>Alluri Laxmi Rani</td>
+        <td>Coordinator-IQAC</td>
+        <td>002</td>
       </tr>
       <tr>
-        <td>3</td>
-        <td>Accounts</td>
-        <td>Narsing Rao</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Scholarship</td>
-        <td>Sravan</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Documentation</td>
-        <td>Ch.Richeal</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Administrative Office</td>
-        <td>Ch.Srinivas Reddy</td>
-      </tr>
-      <tr></tr>
+          <td>3</td>
+          <td><a href="PPoffice.html">Principal's Office</td></a>
+          <td>003</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Board Room</td>
+          <td>004</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><a href="TrainingAP.html">Training And Placement Office</a></td>
+          <td>005</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><a href="scienceAT.html">Science Technology & Innovation (STI Hub)</a></td>
+          <td>007</td>
+        </tr>
+
     </table>
   </body>
-</html>
+  </html>
