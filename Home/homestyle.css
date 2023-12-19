@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
+  transition: all
 }
 .righthome {
   margin-left: 0%;
@@ -192,7 +193,7 @@ a:active {
 }
 @media (max-width: 768px) {
   .logo {
-    width: 10%;
+    width: 40%;
   }
 }
 
@@ -200,30 +201,39 @@ a:active {
   margin: 0;
   height: auto;
   background: transparent;
-  padding: 0;
+  padding: 3%;
   border: none;
   cursor: pointer;
 }
 
 .lefthome {
   margin-left: 7%;
-  margin-top: 10%;
+  margin-top: 0%;
   margin-right: 0%;
+  border:2px solid #d37575;
+  width:90%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .info {
   font-family: "DM Serif Display", serif;
-  width: 50%;
-  font-size: 100%;
-  color: #ca9696;
+  width: 100%;
+  font-size: 150%;
+  padding:3%;
+  padding-top: 0%;
+  color: #d37575;
+  -webkit-text-stroke-width: 0.091px;
+  -webkit-text-stroke-color: #ff0303;
 }
 /* button styling */
 .button {
   --border-right: 6px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #37ff8b;
-  --fs-size: 2em;
-  letter-spacing: 3px;
+  --fs-size: 3.75rem;
+  letter-spacing: 5px;
+  padding:3%;
   text-decoration: none;
   font-size: var(--fs-size);
   font-family: "Arial";
@@ -238,6 +248,7 @@ a:active {
   box-sizing: border-box;
   content: attr(data-text);
   color: var(--animation-color);
+  padding:3.3%;
   width: 0%;
   inset: 0;
   border-right: var(--border-right) solid var(--animation-color);
@@ -249,4 +260,49 @@ a:active {
 .button:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
+}
+.page2 .right{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 40%;
+  margin-right: 10%;
+  width: 50%;
+  height: 80%;
+  border: 2px solid #d37575;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.page3 .left{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 50%;
+  height: 80%;
+  border: 2px solid #d37575;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.page4 .right{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 40%;
+  margin-right: 10%;
+  width: 50%;
+  height: 80%;
+  border: 2px solid #d37575;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
