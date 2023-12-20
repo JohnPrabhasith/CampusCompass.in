@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  transition: all
+  transition: all;
 }
 .righthome {
   margin-left: 0%;
@@ -206,13 +206,13 @@ a:active {
   cursor: pointer;
 }
 
-.lefthome {
+.righthome {
   margin-left: 7%;
   margin-top: 0%;
   margin-right: 0%;
-  border:2px solid #d37575;
-  width:90%;
-  border-radius: 10px;
+  border: 2px solid #d37575;
+  width: 90%;
+  border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -220,20 +220,22 @@ a:active {
   font-family: "DM Serif Display", serif;
   width: 100%;
   font-size: 150%;
-  padding:3%;
-  padding-top: 0%;
+  padding: 5%;
   color: #d37575;
   -webkit-text-stroke-width: 0.091px;
   -webkit-text-stroke-color: #ff0303;
 }
 /* button styling */
 .button {
-  --border-right: 6px;
+  --border-right: 5px;
   --text-stroke-color: rgba(255, 255, 255, 0.6);
   --animation-color: #37ff8b;
-  --fs-size: 3.75rem;
-  letter-spacing: 5px;
-  padding:3%;
+  --fs-size: 4.5rem;
+  letter-spacing: 2px;
+  padding: 1.6%;
+  margin-top: 10%;
+  margin-left: 25%;
+  margin-bottom: 0%;
   text-decoration: none;
   font-size: var(--fs-size);
   font-family: "Arial";
@@ -248,7 +250,7 @@ a:active {
   box-sizing: border-box;
   content: attr(data-text);
   color: var(--animation-color);
-  padding:3.3%;
+  padding: 3.3%;
   width: 0%;
   inset: 0;
   border-right: var(--border-right) solid var(--animation-color);
@@ -261,7 +263,7 @@ a:active {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color));
 }
-.page2 .right{
+/* .page2 .right{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -306,3 +308,31 @@ a:active {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.page5 .left{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 50%;
+  height: 80%;
+  border: 2px solid #d37575;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.fown{
+  position:fixed;
+  width:8vh;
+  height:8vh;
+  margin-left: 92%;
+  margin-top: 5%;
+  border: 2px solid #d37575;
+  border-radius: 999px;
+  background-color: rgba(133, 83, 83, 0.5);
+}
+.fown:hover{
+  background-color: rgba(131, 71, 71, 0.8);
+} */
