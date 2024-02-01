@@ -1,6 +1,6 @@
 @import url(https://pro.fontawesome.com/releases/v5.11.2/css/all.css);
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alumni+Sans+Collegiate+One&family=Cinzel&family=DM+Serif+Display:ital@0;1&family=GFS+Didot&family=Hedvig+Letters+Serif:opsz@12..24&family=Kalnia:wght@100;300;500&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;700&family=Kalnia:wght@300;400;500;600&family=Rowdies&family=Space+Grotesk:wght@700&display=swap');
 body {
     display: flex;
     flex-direction: column;
@@ -265,8 +265,22 @@ body .options .option {
   
   .btn:hover:before {
     opacity: 1;
+  } 
+  .prabhas{
+    color: rgba(0, 0, 0, 0.898);
   }
-  
+  .navya{
+    color: rgba(0, 0, 0, 0.855);
+  }
+  .indu{
+    color: rgb(41, 158, 221);
+  }
+  .varshitha{
+    color: rgb(181, 126, 156);
+  }
+  .vignesh{
+    color: rgb(19, 83, 139);
+  }
   .btn:after {
     z-index: -1;
     content: "";
